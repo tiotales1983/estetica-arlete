@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estética Arlete | Ritual de SPA</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+
     <script>
         tailwind.config = {
             theme: {
@@ -19,98 +24,107 @@
             }
         }
     </script>
+
     <style>
         body { background-color: #000000; color: #e5e7eb; scroll-behavior: smooth; }
-        .img-hover-effect { filter: grayscale(100%); transition: filter 0.7s ease, transform 0.7s ease; }
-        .img-hover-effect:hover { filter: grayscale(0%); transform: scale(1.03); }
-        .nav-link { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; transition: color 0.3s; }
+        .img-hover-effect { filter: grayscale(100%); transition: all 0.7s ease; }
+        .img-hover-effect:hover { filter: grayscale(0%); transform: scale(1.02); }
+        .nav-link { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; transition: color 0.3s; position: relative; }
         .nav-link:hover { color: #d4af37; }
         .nav-link.active::after { content: ''; position: absolute; bottom: -8px; left: 0; width: 100%; height: 1px; background-color: #d4af37; }
-        .gold-border-card { border: 1px solid rgba(212, 175, 55, 0.1); transition: all 0.5s ease; height: 100%; }
+        .gold-border-card { border: 1px solid rgba(212, 175, 55, 0.1); transition: all 0.5s ease; }
         .gold-border-card:hover { border-color: rgba(212, 175, 55, 0.4); background: #080808; }
     </style>
 </head>
-<body class="font-sans antialiased">
+<body class="font-sans antialiased text-stone-300">
+
     <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/5 h-20">
         <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 border border-gold/50 rounded-full flex items-center justify-center"><span class="text-gold font-serif text-xl italic">A</span></div>
+                <div class="w-10 h-10 border border-gold/50 rounded-full flex items-center justify-center">
+                    <span class="text-gold font-serif text-xl italic font-medium">A</span>
+                </div>
                 <h1 class="text-sm font-serif tracking-[0.4em] uppercase text-gold">Estética Arlete</h1>
             </div>
             <div class="hidden lg:flex items-center gap-10">
                 <a href="../index.html" class="nav-link text-stone-500">Facial</a>
                 <a href="../corporal/index.html" class="nav-link text-stone-500">Corporal</a>
-                <a href="index.html" class="nav-link active text-gold relative">Spa</a>
+                <a href="index.html" class="nav-link active text-gold">Spa</a>
                 <a href="../depilacao/index.html" class="nav-link text-stone-500">Depilação</a>
             </div>
-            <button class="bg-gold text-black text-[10px] font-bold py-2 px-6 rounded-full uppercase tracking-widest">Agendar</button>
+            <button class="bg-gold hover:bg-white text-black text-[10px] font-bold py-2 px-6 rounded-full uppercase tracking-widest transition-all">Agendar</button>
         </div>
     </nav>
 
-    <section class="relative h-screen flex items-center overflow-hidden">
+    <!-- Hero SPA -->
+    <section class="relative h-screen flex items-center px-6 overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070" class="w-full h-full object-cover opacity-40">
             <div class="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent"></div>
         </div>
-        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
-            <span class="text-gold uppercase tracking-[0.5em] text-[10px] mb-6 block font-medium font-sans">Santuário de Bem-Estar</span>
+        <div class="relative z-10 max-w-7xl mx-auto w-full">
+            <span class="text-gold uppercase tracking-[0.5em] text-[10px] mb-6 block font-medium">Imersão em Bem-Estar</span>
             <h2 class="text-7xl md:text-[100px] font-serif leading-none mb-8">Ritual <br><span class="italic text-gold font-light">de Spa</span></h2>
-            <p class="text-stone-400 text-lg max-w-md mb-12 font-light leading-relaxed">Desconecte-se do mundo e reconecte-se com sua essência em uma imersão de luxo absoluto.</p>
-            <button class="bg-gold text-black py-4 px-10 rounded-full font-bold uppercase tracking-widest text-[10px]">Descobrir Rituais</button>
+            <p class="text-stone-400 text-lg max-w-md mb-12 font-light leading-relaxed">Pausar o tempo é o maior luxo da vida moderna. Entregue-se a rituais que renovam o corpo e acalmam a alma.</p>
+            <button class="bg-gold hover:bg-white text-black py-4 px-10 rounded-full font-bold uppercase tracking-widest text-[10px] transition-all">Descobrir Rituais</button>
         </div>
     </section>
 
-    <section class="py-32 bg-darkBody">
+    <!-- Especialidades SPA -->
+    <section class="py-32 bg-black">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-24">
-                <h3 class="text-gold font-serif text-4xl italic mb-4">Nossas Especialidades</h3>
-                <p class="text-stone-500 uppercase tracking-[0.4em] text-[10px]">Pura Imersão e Relaxamento</p>
-            </div>
+            <h3 class="text-gold font-serif text-4xl md:text-5xl italic text-center mb-4">Nossas Especialidades</h3>
+            <p class="text-stone-500 uppercase tracking-[0.4em] text-[10px] text-center mb-24 font-medium">Pura Imersão e Relaxamento</p>
+            
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Card 1 -->
                 <div class="gold-border-card p-12 rounded-lg text-center">
+                    <div class="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-8"><div class="w-1.5 h-1.5 bg-gold rounded-full"></div></div>
                     <h4 class="text-gold font-serif text-lg tracking-widest uppercase mb-4">Banho de Ouro</h4>
-                    <p class="text-stone-500 text-xs font-light">Hidratação profunda e luminosidade com ativos nobres e imersão relaxante.</p>
+                    <p class="text-stone-500 text-xs leading-relaxed font-light">Imersão em ativos nobres que devolvem a luminosidade e maciez extrema à pele.</p>
                 </div>
                 <!-- Card 2 -->
                 <div class="gold-border-card p-12 rounded-lg text-center">
+                    <div class="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-8"><div class="w-1.5 h-1.5 bg-gold rounded-full"></div></div>
                     <h4 class="text-gold font-serif text-lg tracking-widest uppercase mb-4">Pedras Quentes</h4>
-                    <p class="text-stone-500 text-xs font-light">Terapia térmica que equilibra as energias e alivia tensões musculares profundas.</p>
+                    <p class="text-stone-500 text-xs leading-relaxed font-light">Terapia térmica que equilibra os centros energéticos e dissolve tensões acumuladas.</p>
                 </div>
                 <!-- Card 3 -->
                 <div class="gold-border-card p-12 rounded-lg text-center">
-                    <h4 class="text-gold font-serif text-lg tracking-widest uppercase mb-4">Day Spa VIP</h4>
-                    <p class="text-stone-500 text-xs font-light">Uma jornada completa de cuidados faciais e corporais em um único dia de luxo.</p>
+                    <div class="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-8"><div class="w-1.5 h-1.5 bg-gold rounded-full"></div></div>
+                    <h4 class="text-gold font-serif text-lg tracking-widest uppercase mb-4">Candle Massage</h4>
+                    <p class="text-stone-500 text-xs leading-relaxed font-light">Massagem com velas aromáticas derretidas, proporcionando calor suave e aromas relaxantes.</p>
                 </div>
+                <!-- Adicione mais cards se desejar seguindo o mesmo padrão -->
             </div>
         </div>
     </section>
 
-    <!-- Nosso Santuário com Hover Effect -->
-    <section class="py-32 bg-darkBody border-t border-white/5">
+    <!-- Santuário SPA (Efeito P&B Colorido) -->
+    <section class="py-32 bg-black border-t border-white/5">
         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
             <div>
-                <h3 class="text-5xl font-serif mb-10 leading-tight">O Nosso <br><span class="text-gold italic">Santuário Zen</span></h3>
-                <p class="text-stone-400 text-lg font-light leading-relaxed mb-12">Salas climatizadas com aromaterapia e trilha sonora exclusiva para que sua mente descanse enquanto cuidamos de você.</p>
+                <span class="text-gold uppercase tracking-[0.5em] text-[10px] mb-6 block font-medium">Ambiente Exclusivo</span>
+                <h3 class="text-5xl md:text-6xl font-serif mb-10 leading-tight">O Nosso <br><span class="text-gold italic">Santuário</span></h3>
+                <p class="text-stone-400 text-lg font-light leading-relaxed mb-12">Salas projetadas para o silêncio e a paz, equipadas com o melhor do conforto mundial para sua imersão ser total.</p>
                 <div class="grid grid-cols-2 gap-8">
-                    <div class="p-6 border border-white/5 bg-white/5 text-center text-gold font-serif text-lg uppercase">Silêncio</div>
-                    <div class="p-6 border border-white/5 bg-white/5 text-center text-gold font-serif text-lg uppercase">Paz</div>
+                    <div class="p-6 border border-white/5 bg-white/5 rounded-lg text-center uppercase text-[10px] tracking-widest text-gold font-bold">Privacidade</div>
+                    <div class="p-6 border border-white/5 bg-white/5 rounded-lg text-center uppercase text-[10px] tracking-widest text-gold font-bold">Conforto</div>
                 </div>
             </div>
             <div class="grid grid-cols-2 gap-4">
-                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=1000" class="img-hover-effect rounded-lg w-full h-80 object-cover">
-                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1000" class="img-hover-effect rounded-lg w-full h-80 pt-12 object-cover">
+                <div class="space-y-4">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800" class="img-hover-effect rounded-lg w-full h-64 object-cover">
+                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=800" class="img-hover-effect rounded-lg w-full h-80 object-cover">
+                </div>
+                <div class="space-y-4 pt-12">
+                    <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?q=80&w=800" class="img-hover-effect rounded-lg w-full h-80 object-cover">
+                    <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?q=80&w=800" class="img-hover-effect rounded-lg w-full h-64 object-cover">
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-20 bg-black border-t border-white/5 text-center">
-        <div class="flex items-center justify-center gap-3 mb-10">
-            <div class="w-10 h-10 border border-gold/50 rounded-full flex items-center justify-center"><span class="text-gold font-serif text-xl italic">A</span></div>
-            <h1 class="text-[12px] font-serif tracking-[0.5em] uppercase text-gold">Estética Arlete</h1>
-        </div>
-        <p class="text-[9px] text-stone-700 uppercase tracking-[0.4em]">© 2026 Estética Arlete. SPA & RELAX.</p>
-    </footer>
     <script>lucide.createIcons();</script>
 </body>
 </html>
