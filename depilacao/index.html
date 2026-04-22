@@ -1,6 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-M4BSH8LD');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '799224539620130');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=799224539620130&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estética Arlete | Depilação de Luxo</title>
@@ -44,11 +72,11 @@
             scroll-behavior: smooth;
         }
 
-        /* Efeito de imagem P&B para Colorida */
         .img-hover-effect {
             filter: grayscale(100%);
             transition: filter 0.7s ease, transform 0.7s ease;
         }
+
         .img-hover-effect:hover {
             filter: grayscale(0%);
             transform: scale(1.03);
@@ -61,7 +89,10 @@
             text-transform: uppercase;
             transition: color 0.3s;
         }
-        .nav-link:hover { color: #d4af37; }
+
+        .nav-link:hover { 
+            color: #d4af37; 
+        }
         
         .nav-link.active::after {
             content: '';
@@ -78,18 +109,24 @@
             transition: all 0.5s ease;
             height: 100%;
         }
+
         .gold-border-card:hover {
             border-color: rgba(212, 175, 55, 0.4);
             background: #080808;
         }
     </style>
 </head>
+
 <body class="font-sans antialiased">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4BSH8LD" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navegação -->
     <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/5 h-20">
         <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
-            <!-- Logo -->
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 border border-gold/50 rounded-full flex items-center justify-center">
                     <span class="text-gold font-serif text-xl italic">A</span>
@@ -104,7 +141,6 @@
                 <a href="index.html" class="nav-link active text-gold">Depilação</a>
             </div>
 
-            <!-- Botão -->
             <a href="https://wa.me/5548991850767?text=Olá%20,%20estava%20em%20seu%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20a%20Depilação" target="_blank" class="bg-gold hover:bg-white text-black text-[10px] font-bold py-2 px-6 rounded-full uppercase tracking-widest transition-all duration-500 text-center">
                 Agendar
             </a>
@@ -114,8 +150,7 @@
     <!-- Hero Depilação -->
     <section class="relative h-screen flex items-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="../assets/Hero Depilação.jpeg" 
-                 class="w-full h-full object-cover opacity-40">
+            <img src="../assets/Hero Depilação.jpeg" class="w-full h-full object-cover opacity-40">
             <div class="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent"></div>
         </div>
 
@@ -126,7 +161,7 @@
                 <span class="italic text-gold font-light">de Verdade</span>
             </h2>
             <p class="text-stone-400 text-lg max-w-md mb-12 font-light leading-relaxed">
-                Depilação eficiente, mais confortável e com cuidado exclusivo. Oferecemos opções de depilação a laser, ceras e linha.
+                Depilação eficiente, mais confortável e com cuidado exclusivo. Oferecemos o que há de melhor em tecnologia e métodos tradicionais.
             </p>
             <a href="#procedimentos" class="group inline-flex items-center gap-4 bg-gold hover:bg-white text-black py-4 px-10 rounded-full font-bold uppercase tracking-widest text-[10px] transition-all duration-500">
                 Descobrir Mais 
@@ -145,7 +180,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Card 1: Light Sheer -->
+                <!-- 1. Light Sheer -->
                 <div class="gold-border-card p-12 rounded-lg text-center">
                     <div class="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-8">
                         <div class="w-1.5 h-1.5 bg-gold rounded-full"></div>
@@ -153,7 +188,8 @@
                     <h4 class="text-gold font-serif text-lg tracking-widest uppercase mb-4 leading-tight">Light Sheer Duet Laser</h4>
                     <p class="text-stone-500 text-sm leading-relaxed font-light">Depilação a Laser de verdade, o melhor equipamento para dar adeus aos pelos e conhecer a liberdade!</p>
                 </div>
-                <!-- Card 2: Cera de Mel -->
+
+                <!-- 2. Cera de Mel -->
                 <div class="gold-border-card p-12 rounded-lg text-center">
                     <div class="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-8">
                         <div class="w-1.5 h-1.5 bg-gold rounded-full"></div>
@@ -161,7 +197,8 @@
                     <h4 class="text-gold font-serif text-lg tracking-widest uppercase mb-4">Cera de Mel</h4>
                     <p class="text-stone-500 text-sm leading-relaxed font-light">Método tradicional com cera natural que hidrata enquanto remove os pelos pela raiz, removida com TNT.</p>
                 </div>
-                <!-- Card 3: Cera Espanhola -->
+
+                <!-- 3. Cera Espanhola -->
                 <div class="gold-border-card p-12 rounded-lg text-center">
                     <div class="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-8">
                         <div class="w-1.5 h-1.5 bg-gold rounded-full"></div>
@@ -169,23 +206,26 @@
                     <h4 class="text-gold font-serif text-lg tracking-widest uppercase mb-4 leading-tight">Cera Espanhola</h4>
                     <p class="text-stone-500 text-sm leading-relaxed font-light">Método de aplicação espessa e removida (sem papel/TNT), técnica de baixa temperatura que reduz a dor.</p>
                 </div>
-                <!-- Card 4: Egípcia -->
+
+                <!-- 4. Egípcia -->
                 <div class="gold-border-card p-12 rounded-lg text-center">
                     <div class="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-8">
                         <div class="w-1.5 h-1.5 bg-gold rounded-full"></div>
                     </div>
                     <h4 class="text-gold font-serif text-lg tracking-widest uppercase mb-4 leading-tight">Egípcia com Linha</h4>
-                    <p class="text-stone-500 text-sm leading-relaxed font-light">Remoção precisa de pelos faciais pela raiz, ideal para quem busca definição e durabilidade.</p>
+                    <p class="text-stone-500 text-sm leading-relaxed font-light">Remoção precisa de pelos faciais pela raiz, ideal para quem busca definição e durabilidade no rosto.</p>
                 </div>
-                <!-- Card 5: Design -->
+
+                <!-- 5. Design -->
                 <div class="gold-border-card p-12 rounded-lg text-center">
                     <div class="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-8">
                         <div class="w-1.5 h-1.5 bg-gold rounded-full"></div>
                     </div>
                     <h4 class="text-gold font-serif text-lg tracking-widest uppercase mb-4 leading-tight">Design de Sobrancelhas</h4>
-                    <p class="text-stone-500 text-sm leading-relaxed font-light">Técnica realizada por designer que molda e define as sobrancelhas de forma personalizada, harmonizando-as com os traços faciais.</p>
+                    <p class="text-stone-500 text-sm leading-relaxed font-light">Técnica realizada por designer que molda e define as sobrancelhas de forma personalizada e harmoniosa.</p>
                 </div>
-                <!-- Card 6: Todos Públicos -->
+
+                <!-- 6. Atendemos Todos os Públicos -->
                 <div class="gold-border-card p-12 rounded-lg text-center">
                     <div class="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-8">
                         <div class="w-1.5 h-1.5 bg-gold rounded-full"></div>
@@ -205,14 +245,15 @@
                     <span class="text-gold uppercase tracking-[0.5em] text-[10px] mb-6 block font-medium">Ambiente Confortável</span>
                     <h3 class="text-5xl md:text-6xl font-serif mb-10 leading-tight">Depilação <br><span class="text-gold italic">Eficiente</span></h3>
                     <p class="text-stone-400 text-lg font-light leading-relaxed mb-12">
-                        Redefinimos o conceito de depilação em um ambiente que prioriza sua saúde e bem-estar. Com protocolos exclusivos que minimizam o desconforto, da alta tecnologia do laser às ceras orgânicas de mel, nosso espaço oferece salas 100% climatizadas e privativas, garantindo uma pele livre dos pelos e uma experiência de conforto.</p>
+                        Redefinimos o conceito de depilação em um ambiente que prioriza sua saúde e bem-estar. Com protocolos exclusivos que minimizam o desconforto, nosso espaço oferece salas 100% climatizadas e privativas.
+                    </p>
                     
                     <div class="grid grid-cols-2 gap-8">
-                        <div class="p-6 border border-white/5 bg-white/5 rounded-lg">
-                            <h5 class="text-gold font-serif text-lg mb-2 text-center uppercase tracking-widest text-center">Privacidade e mais Conforto</h5>
+                        <div class="p-6 border border-white/5 bg-white/5 rounded-lg text-center">
+                            <h5 class="text-gold font-serif text-lg mb-2 uppercase tracking-widest">Privacidade</h5>
                         </div>
-                        <div class="p-6 border border-white/5 bg-white/5 rounded-lg">
-                            <h5 class="text-gold font-serif text-lg mb-2 text-center uppercase tracking-widest text-center">Procedimentos Seguros</h5>
+                        <div class="p-6 border border-white/5 bg-white/5 rounded-lg text-center">
+                            <h5 class="text-gold font-serif text-lg mb-2 uppercase tracking-widest">Segurança</h5>
                         </div>
                     </div>
                 </div>
@@ -241,7 +282,7 @@
             <div class="grid md:grid-cols-2 gap-16 text-left">
                 <div class="relative pl-10 border-l border-gold/20">
                     <p class="text-stone-300 italic text-xl leading-relaxed mb-8">
-                        "A depilação a Laser no Centro de Estética Arlete, é excelente. A profissional é muito atenta aos detalhes de higiene e cuidados com a pele, tem conversa agradável e sempre bem humorada. Só faço com ela e agradeço todos os dias por ter encontrado um serviço de depilação com essa qualidade - minha pele é muito sensível e tinha receio de como seria. Sempre que fui no Centro Estético Arlete o ambiente estava bem organizado e o atendimento foi muito gentil. Recebi todas as orientações necessárias e personalizadas."
+                        "A depilação a Laser no Centro de Estética Arlete, é excelente. A profissional é muito atenta aos detalhes de higiene e cuidados com a pele... Recomendo de olhos fechados!"
                     </p>
                     <div class="flex items-center gap-3">
                         <span class="text-gold uppercase tracking-[0.2em] text-[10px] font-bold">— Gladys Prado</span>
@@ -252,7 +293,7 @@
                 </div>
                 <div class="relative pl-10 border-l border-gold/20">
                     <p class="text-stone-300 italic text-xl leading-relaxed mb-8">
-                        "Excelente estabelecimento! Frequento há mais de 20 anos, já tendo nestes anos feito diversos procedimentos em serviços de estética e salão! Por mais de 10 anos, faço depilação na cera e tenho grande carinho pela profissional que sempre tornou o procedimento mais agradável e confortável."
+                        "Excelente estabelecimento! Frequento há mais de 20 anos... faço depilação na cera e tenho grande carinho pela profissional que sempre tornou o procedimento agradável."
                     </p>
                     <div class="flex items-center gap-3">
                         <span class="text-gold uppercase tracking-[0.2em] text-[10px] font-bold">— Loisiana Feuser</span>
@@ -291,7 +332,7 @@
                 </div>
                 <h1 class="text-[12px] font-serif tracking-[0.5em] uppercase text-gold">Estética Arlete</h1>
             </div>
-            <p class="text-[9px] text-stone-700 uppercase tracking-[0.4em] mb-4">© 2026 Estética Arlete. Todos os direitos reservados.</p>
+            <p class="text-[9px] text-stone-700 uppercase tracking-[0.4em] mb-4 text-center">© 2026 Estética Arlete. Todos os direitos reservados.</p>
         </div>
     </footer>
 
