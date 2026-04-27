@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estética Arlete | Luxo e Sofisticação</title>
-  <!-- Google Tag Manager -->
+    
+    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -69,7 +70,6 @@
             scroll-behavior: smooth;
         }
 
-        /* Efeito de imagem P&B para Colorida */
         .img-hover-effect {
             filter: grayscale(100%);
             transition: filter 0.7s ease, transform 0.7s ease;
@@ -109,19 +109,22 @@
     </style>
 </head>
 <body class="font-sans antialiased">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4BSH8LD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navegação -->
-    <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/5 h-20">
+    <nav class="fixed top-0 w-full z-[100] bg-black/80 backdrop-blur-md border-b border-white/5 h-20">
         <div class="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
-            <!-- Logo -->
             <div class="flex items-center gap-3">
                 <div class="w-10 h-10 border border-gold/50 rounded-full flex items-center justify-center">
-                    <span class="text-gold font-serif text-xl italic">A</span>
+                    <span class="text-gold font-serif text-xl italic font-bold">A</span>
                 </div>
                 <h1 class="text-sm font-serif tracking-[0.4em] uppercase text-gold">Estética Arlete</h1>
             </div>
 
-            <!-- Links -->
+            <!-- Links Desktop -->
             <div class="hidden lg:flex items-center gap-10">
                 <a href="index.html" class="nav-link active text-gold">Facial</a>
                 <a href="corporal/" class="nav-link text-stone-500">Corporal</a>
@@ -129,22 +132,34 @@
                 <a href="depilacao/" class="nav-link text-stone-500">Depilação</a>
             </div>
 
-            <!-- Botão -->
-            <a href="https://wa.me/5548991850767?text=Olá%20,%20estava%20em%20seu%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20procedimentos%20Faciais" target="_blank" class="bg-gold hover:bg-white text-black text-[10px] font-bold py-2 px-6 rounded-full uppercase tracking-widest transition-all duration-500 text-center">
-                Agendar
-            </a>
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/5548991850767?text=Olá%20,%20estava%20em%20seu%20site%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20procedimentos%20Faciais" target="_blank" class="bg-gold hover:bg-white text-black text-[10px] font-bold py-2 px-6 rounded-full uppercase tracking-widest transition-all duration-500 text-center">
+                    Agendar
+                </a>
+                <!-- Ícone Hambúrguer Mobile -->
+                <button id="abrir-menu" class="lg:hidden text-gold">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Dropdown -->
+        <div id="menu-mobile" class="hidden absolute top-20 left-0 w-full bg-black/95 border-b border-white/10 flex flex-col p-6 gap-6 text-center lg:hidden">
+            <a href="index.html" class="text-gold uppercase tracking-widest text-[10px] font-bold">Facial</a>
+            <a href="corporal/" class="text-stone-500 uppercase tracking-widest text-[10px] font-bold">Corporal</a>
+            <a href="spa/" class="text-stone-500 uppercase tracking-widest text-[10px] font-bold">Spa Day</a>
+            <a href="depilacao/" class="text-stone-500 uppercase tracking-widest text-[10px] font-bold">Depilação</a>
         </div>
     </nav>
 
     <!-- Seção Hero -->
     <section class="relative h-screen flex items-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="assets/hero facial.jpeg" 
-                 class="w-full h-full object-cover opacity-40">
+            <img src="assets/hero facial.jpeg" class="w-full h-full object-cover opacity-40">
             <div class="absolute inset-0 bg-gradient-to-r from-black via-black/60 to-transparent"></div>
         </div>
 
-        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+        <div class="relative z-10 max-w-7xl mx-auto px-6 w-full text-left">
             <span class="text-gold uppercase tracking-[0.5em] text-[10px] mb-6 block font-medium">Eleve o padrão do seu cuidado facial</span>
             <h2 class="text-7xl md:text-[100px] font-serif leading-none mb-8">
                 Estética <br>
@@ -170,28 +185,25 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Card 1 -->
                 <div class="gold-border-card p-12 rounded-lg text-center">
                     <div class="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-8">
                         <div class="w-1.5 h-1.5 bg-gold rounded-full"></div>
                     </div>
-                    <h4 class="text-gold font-serif text-lg tracking-widest uppercase mb-4">Estimulo real de colágeno</h4>
+                    <h4 class="text-gold font-serif text-lg tracking-widest uppercase mb-4 leading-tight">Estimulo real de colágeno</h4>
                     <p class="text-stone-500 text-sm leading-relaxed font-light">Procedimentos injetáveis de alta qualidade que devolvem firmeza e promovem rejuvenescimento natural e progressivo.</p>
                 </div>
-                <!-- Card 2 -->
                 <div class="gold-border-card p-12 rounded-lg text-center">
                     <div class="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-8">
                         <div class="w-1.5 h-1.5 bg-gold rounded-full"></div>
                     </div>
-                    <h4 class="text-gold font-serif text-lg tracking-widest uppercase mb-4">Limpeza de pele premium</h4>
+                    <h4 class="text-gold font-serif text-lg tracking-widest uppercase mb-4 leading-tight">Limpeza de pele premium</h4>
                     <p class="text-stone-500 text-sm leading-relaxed font-light">Remove impurezas, desobstrui os poros e devolve saúde, equlíbrio e luminosidade.</p>
                 </div>
-                <!-- Card 3 -->
                 <div class="gold-border-card p-12 rounded-lg text-center">
                     <div class="w-10 h-10 border border-gold/20 rounded-full flex items-center justify-center mx-auto mb-8">
                         <div class="w-1.5 h-1.5 bg-gold rounded-full"></div>
                     </div>
-                    <h4 class="text-gold font-serif text-lg tracking-widest uppercase mb-4">Toxina Botulínica</h4>
+                    <h4 class="text-gold font-serif text-lg tracking-widest uppercase mb-4 leading-tight">Toxina Botulínica</h4>
                     <p class="text-stone-500 text-sm leading-relaxed font-light">Suaviza linhas de expressão e preserva sua naturalidade, revelando uma aparência mais leve, jovem e elegante.</p>
                 </div>
             </div>
@@ -211,12 +223,12 @@
                     
                     <div class="grid grid-cols-2 gap-8">
                         <div class="p-6 border border-white/5 bg-white/5 rounded-lg text-center">
-                            <h5 class="text-gold font-serif text-lg mb-2">Privacidade & Conforto</h5>
+                            <h5 class="text-gold font-serif text-lg mb-2 uppercase">Privacidade</h5>
                             <p class="text-stone-500 text-[10px] uppercase tracking-widest">Salas Privativas</p>
                         </div>
                         <div class="p-6 border border-white/5 bg-white/5 rounded-lg text-center">
-                            <h5 class="text-gold font-serif text-lg mb-2">Qualidade & Técnica</h5>
-                            <p class="text-stone-500 text-[10px] uppercase tracking-widest">Tratamentos Personalizados</p>
+                            <h5 class="text-gold font-serif text-lg mb-2 uppercase">Qualidade</h5>
+                            <p class="text-stone-500 text-[10px] uppercase tracking-widest">Personalizado</p>
                         </div>
                     </div>
                 </div>
@@ -240,28 +252,28 @@
         <div class="max-w-5xl mx-auto px-6 text-center">
             <i data-lucide="quote" class="w-12 h-12 text-gold/20 mx-auto mb-10"></i>
             <h3 class="text-4xl md:text-5xl font-serif italic mb-4">Experiências Reais</h3>
-            <p class="text-stone-500 uppercase tracking-[0.4em] text-[10px] mb-20">O que nossas clientes dizem</p>
+            <p class="text-stone-500 uppercase tracking-[0.4em] text-[10px] mb-20">Avaliações via Google</p>
             
             <div class="grid md:grid-cols-2 gap-16 text-left">
                 <div class="relative pl-10 border-l border-gold/20">
                     <p class="text-stone-300 italic text-xl leading-relaxed mb-8">
-                        "Fiz aplicação de botox na Estética Arlete e posso afirmar que o resultado está impecável até hoje. Natural, bem feito e exatamente como eu esperava. O atendimento é impecável do início ao fim... Recomendo de olhos fechados!"
+                        "Fiz aplicação de botox na Estética Arlete e posso afirmar que o resultado está impecável até hoje. Natural, bem feito e exatamente como eu esperava. Recomendo de olhos fechados!"
                     </p>
                     <div class="flex items-center gap-3">
                         <span class="text-gold uppercase tracking-[0.2em] text-[10px] font-bold">— Taiana Pereira</span>
                         <div class="flex items-center gap-1 px-2 py-1 bg-white/5 rounded text-stone-500 text-[8px] uppercase tracking-widest font-medium">
-                            <i data-lucide="star" class="w-2 h-2 fill-gold text-gold"></i> Avaliação via Google
+                            <i data-lucide="star" class="w-2 h-2 fill-gold text-gold"></i> Google
                         </div>
                     </div>
                 </div>
                 <div class="relative pl-10 border-l border-gold/20">
                     <p class="text-stone-300 italic text-xl leading-relaxed mb-8">
-                        "Fiz limpeza de pele e posso afirmar que ficou impecável, fora os produtos que a profissional me recomendou usar em casa para o rosto que super deram certo... Recomendo muito!"
+                        "Fiz limpeza de pele e posso afirmar que ficou impecável, fora os produtos que a profissional me recomendou usar em casa para o rosto que super deram certo. Recomendo muito!"
                     </p>
                     <div class="flex items-center gap-3">
                         <span class="text-gold uppercase tracking-[0.2em] text-[10px] font-bold">— Giovanna Kampff</span>
                         <div class="flex items-center gap-1 px-2 py-1 bg-white/5 rounded text-stone-500 text-[8px] uppercase tracking-widest font-medium">
-                            <i data-lucide="star" class="w-2 h-2 fill-gold text-gold"></i> Avaliação via Google
+                            <i data-lucide="star" class="w-2 h-2 fill-gold text-gold"></i> Google
                         </div>
                     </div>
                 </div>
@@ -295,10 +307,20 @@
                 </div>
                 <h1 class="text-[12px] font-serif tracking-[0.5em] uppercase text-gold">Estética Arlete</h1>
             </div>
-            <p class="text-[9px] text-stone-700 uppercase tracking-[0.4em] mb-4">© 2026 Estética Arlete. Todos os direitos reservados.</p>
+            <p class="text-[9px] text-stone-700 uppercase tracking-[0.4em] mb-4 text-center">© 2026 Estética Arlete. Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <script>lucide.createIcons();</script>
+    <script>
+        lucide.createIcons();
+
+        // Lógica para abrir/fechar o menu no celular
+        const btnAbrir = document.getElementById('abrir-menu');
+        const menu = document.getElementById('menu-mobile');
+
+        btnAbrir.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
